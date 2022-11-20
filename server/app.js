@@ -28,10 +28,10 @@ import debug from '../services/debugLogger';
 // Importando enrutador
 import router from './routes/router';
 
-//Importando configKeys
+// Importando configKeys
 import configKeys from './config/configKeys';
 
-//importando odm
+// importando odm
 import MongooseOdm from './config/odm';
 
 // Recuperar el modo de ejecución de la app
@@ -69,18 +69,18 @@ if (nodeEnv === 'development') {
   debug('Ejecutando en modo de producción ');
 }
 
-//Realizando la conexión
+// Realizando la conexión
 const mongooseODM = new MongooseOdm(configKeys.mongoUrl);
-//Ejecutando la conexión a la DB
-//Creación de una IIFE para crear un ámbito asíncrono que me permita usar async away
-(async ()=>{
-  //Ejecutamos el método de conexión
-  const  connectionResult = await mongooseODM.connect();
-  //Revisanmos si hay un error
-  if (connectionResult){
-    //Si está conectado
+// Ejecutando la conexión a la DB
+// Creación de una IIFE para crear un ámbito asíncrono que me permita usar async away
+(async () => {
+  // Ejecutamos el método de conexión
+  const connectionResult = await mongooseODM.connect();
+  // Revisanmos si hay un error
+  if (connectionResult) {
+    // Si está conectado
     logger.info('La conexión fue exitosa');
-  }else{
+  } else {
     logger.error('No hubo conexión');
   }
 })();
