@@ -100,8 +100,9 @@ app.use(cookieParser());
 // Servidor de archivos estáticos
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Agregando ritas a la aplicacion
+// Agregando rutas a la aplicacion
 router.addRoutes(app);
+app.use(require('./routes/notes.routes'));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
