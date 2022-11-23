@@ -18,9 +18,9 @@ router.get(['/Citas'], homeController.Citas);
 // Get Servicios
 router.get(['/Servicios'], homeController.Servicios);
 // Get Accesar
-// router.get(['/Accesar'], homeController.Accesar);
+router.get(['/Accesar'], homeController.Accesar);
 // Get Registrarse
-// router.get(['/Registro'], homeController.Registro);
+router.get(['/Registro'], homeController.Registro);
 
 // Exporto este tramo de ruta
 export default router;

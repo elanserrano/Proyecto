@@ -2,16 +2,16 @@
   <main>
     <div class="py-1 text-center">
       <img class="d-block mx-auto mb-2" src="https://images.vexels.com/media/users/3/152018/isolated/preview/c728796e46fb111cce09ffd324a40949-icono-colorido-diente.png" alt="" width="15%" height="auto">
-      <h2>Agenda tu cita hoy</h2>
-      <p class="lead">Al llenar el formulario y nos pondremos en contacto contigo a la brevedad </p>
+      <h2>Registro de Usuario</h2>
+      <p class="lead"></p>
     </div>
       <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Datos del paciente</h4>
+        <h4 class="mb-3">Datos del usuario</h4>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nombres</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
               <div class="invalid-feedback">
                 Sus nombres son requeridos
               </div>
@@ -19,7 +19,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
               <div class="invalid-feedback">
                 Su apellido es requerido
               </div>
@@ -29,36 +29,17 @@
               <label for="username" class="form-label">Nombre de usuario</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Nombre del usuario" required>
+                <input type="text" class="form-control" id="username" placeholder="Nombre del usuario">
               <div class="invalid-feedback">
                   Su nombre de usuario es requerido
                 </div>
               </div>
             </div>
-
-            <div class="col-12">
+           <div class="col-12">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Mi-email@gmail.com">
               <div class="invalid-feedback">
                 Su email es requerido
               </div>
             </div>
-
-            <div class="col-12">
-              <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Por favor ingrese su direccion
-              </div>
-            </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">Es mi primera vez</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Ya soy paciente</label>
-          </div>
-          &emsp;
           <a href='#' class='d-block mx-auto mb-2 btn btn-primary'>Agendar cita 🦷</a>

@@ -38,7 +38,7 @@ const Servicios = (req, res) => {
   res.render('home/Servicios', viewModel);
 };
 // get accesar
-/* const Accesar = (req, res) => {
+const Accesar = (req, res) => {
   const viewModel = {
     appVersion: configKeys.appVersion,
   };
@@ -53,6 +53,6 @@ const Registro = (req, res) => {
 
   res.render('home/Registro', viewModel);
 };
-*/
+
 // Exportando el controlador
-export default { home, about, Citas, Servicios };
+export default { home, about, Citas, Servicios, Accesar, Registro };
