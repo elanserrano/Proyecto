@@ -17,9 +17,7 @@ class MongooseOdm {
       logger.info(`La base de datos se ha conectado en: ${this.url}`);
       return true;
     } catch (error) {
-      logger.error(
-        ` No se pudo realizar la conexión: ${error.message}`
-      );
+      logger.error(` No se pudo realizar la conexión: ${error.message}`);
       return false;
     }
   }

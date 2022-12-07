@@ -91,6 +91,8 @@ configTemplateEngine(app);
 
 // Establezco Middelware
 app.use(morgan('dev', { stream: logger.stream }));
+// Entender los datos que enviamos a traves de html
+app.use(express.urlencoded({ extended: false }));
 // Middleware para parsear a json la peticion
 app.use(express.json());
 // Decodificar la url
